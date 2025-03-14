@@ -1,0 +1,16 @@
+[package]
+name = "rust-multiplatform"
+version = "0.1.0"
+edition = "2021"
+description = "A framework for building cross-platform Rust applications"
+license = "MIT"
+
+[dependencies]
+crossbeam = "0.8.4"
+once_cell = "1.19.0"
+uniffi = { version = "0.27.2", features = ["cli"] }
+log = "0.4"
+
+[lib]
+name = "rust_multiplatform"
+path = "src/lib.rs"
